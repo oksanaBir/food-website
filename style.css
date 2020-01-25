@@ -1,0 +1,257 @@
+html, body {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background: #E5EEDC;
+    padding-bottom: 200px;
+}
+
+.no-selection {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.menuWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    box-shadow: 0px 0px 10px 1px #d2d9cc;
+    margin-bottom: 44px;
+    background-color: white;
+    padding-left: 30px;
+}
+
+.menu .menuItem {    
+    padding: 10px;
+    background-color: white;
+    list-style-type: none;
+    font-family: 'Tahoma';
+    color: #9C9C9C;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu .decoration {
+    background-color: #668F54;
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    top: 50px;
+    left: 43%;
+    opacity: 0; 
+}
+
+.menuItem:hover .decoration{
+    opacity:1;
+}
+
+.menuItem .lastDecoration {
+    background-color: white;
+}
+
+.menu .logo {
+    color: #668F54;
+    width: auto;
+    font-weight: bold;
+    padding: 26px 20px 0px 0px;
+}
+
+.menu .last {
+    background-color: #668F54;
+    color: white;
+    width: 120px;
+}
+
+.bigSlider {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 44px;
+}
+
+.bigSlider .sliderWrapper {
+    position: relative;
+    height: 100%;
+}
+
+.bigSlider .slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43QWQoAIAhF0ev+F10UKFhO/npweEJfCxBp3EXHVNBQBR3K4IciqKic+DbDG8N1gPs6Q5rcKEfDG8O7DgogEqvHAAAAAElFTkSuQmCC);
+    box-shadow: inset 0 0 20px white;
+}
+
+.bigSlider .first { 
+    z-index: 1;
+    background-color: #E5EEDC;
+}
+
+ .bigSlider .second { 
+    background-color: #668F54;
+}
+
+ .bigSlider .third {
+    background-color: #18640f;
+}
+
+.bigSlider .control {
+    line-height: 75px;
+    position: absolute;
+    top: 160px;
+    width: 35px;
+    color: #668F54;
+    height: 75px;
+    background: white;
+    z-index: 20;
+    box-shadow: 0px 0px 10px 1px rgba(232,222,222,1);
+    font-family: NissanOpti;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bigSlider .control:hover {
+    background-color: #668F54;
+    color: white;
+}
+
+.bigSlider .leftButton {
+    left: 0;
+    padding-right: 6px;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+
+.bigSlider .rightButton {
+    right: 0;
+    padding-left: 6px;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+}
+
+.littleSlider {
+    position: relative;
+    display: flex;
+    height: 230px;
+}
+
+.littleSlider .sliderWrapper {
+    position: relative;
+    left: 0;
+    z-index: 1;
+    display: flex; 
+    flex-direction: row;
+    width: 170%;
+}
+
+ .littleSlider .visibleSlides {
+    width: 1068px;
+    overflow: hidden;
+    position: relative;
+}
+
+ .littleSlider .slide {
+    width: 300px;
+    background-color: #f2f5f0;
+    padding: 15px 28px 35px 28px;
+    font-family: 'Tahoma';
+}
+
+.littleSlider .infoSlide {
+    padding: 10px;
+    border: #18640f 2px solid;
+}
+
+.littleSlider .photo {
+    width:200px;
+    height: 125px;
+    float: left;
+    transition: transform .15s;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 16px;
+}
+
+.littleSlider .photo:hover {
+    transform: scale(1.3);
+}
+
+.littleSlider .info {
+    font-size: 0.9em;
+    padding-bottom: 7px;   
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.info .add {
+    color: #18640f;
+}
+
+.littleSlider .mainText {
+    cursor: default;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.littleSlider .infoText {
+    padding: 10px;
+    color: #575757;
+    text-align: left;
+}
+
+.littleSlider .controls {
+    position: relative;
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+    color: #668F54; 
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.littleSlider .controls div {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.littleSlider .controls div:hover {
+    background-color: #d2d9cc;
+}
+
+.footer {
+    padding: 15px;
+    background-color: #668F54;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-bottom: -200px;
+    font-size: 14px;
+    font-family: 'Tahoma';
+}
+
+.footer .info {
+    opacity: 0.7;
+}
