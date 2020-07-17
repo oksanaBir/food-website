@@ -57,7 +57,6 @@ const openPrevSlide = () => {
     prevSlide.style.left = '0%';
   }, 100);
   active = getPrevSlideNumber();
-   
 }
 
 const littleSliderParams = {
@@ -118,4 +117,4 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('littleControlRightButton').onclick = moveRightLittleSlider;
 
   resetBigSliderTimeout();
-})
+});
